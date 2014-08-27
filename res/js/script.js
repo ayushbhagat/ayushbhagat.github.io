@@ -83,15 +83,15 @@ function loadNewPage(nextPage) {
 }
 
 function addWhiteLines() {
-	$('#sidebar-thin div').removeClass('line-black');
-	$('#sidebar-thin div').addClass('line-white');
+	$('#sidebar-thin .inner-wrapper div').removeClass('line-black');
+	$('#sidebar-thin .inner-wrapper div').addClass('line-white');
 	$('#line-1').animate({'top': '+=5px'}, 'fast');
 	$('#line-3').animate({'top': '-=5px'}, 'fast');
 }
 
 function addBlackLines() {
-	$('#sidebar-thin div').removeClass('line-white');
-	$('#sidebar-thin div').addClass('line-black');
+	$('#sidebar-thin .inner-wrapper div').removeClass('line-white');
+	$('#sidebar-thin .inner-wrapper div').addClass('line-black');
 	$('#line-1').animate({'top': '-=5px'}, 'fast');
 	$('#line-3').animate({'top': '+=5px'}, 'fast');
 }

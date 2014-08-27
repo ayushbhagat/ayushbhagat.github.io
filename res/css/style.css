@@ -18,47 +18,47 @@
 }
 
 #sidebar-thin {
-	display: inline-block;
-	width: 28%;
-	height: 100%;
 	cursor: pointer;
+	display: table;
+	position: absolute;
+	height: 100%;
+	width: 25%;
+	margin-left: 150px;
+	padding-left: 11px;
+	padding-right: 11px;
 }
 
 .line-white {
-	position: absolute;
+	position: relative;
 	background-image: url("../img/line-white.png");
+	background-repeat: no-repeat;
 	width: 42px;
 	height: 6px;
 }
 
 .line-black {
-	position: absolute;
+	position: relative;
 	background-image: url("../img/line-black.png");
+	background-repeat: no-repeat;
 	width: 42px;
 	height: 6px;
 }
 
 #line-1 {
-	top: 343px;
-	left: 161px;
+	top: -5px;
 }
 
 #line-2 {
-	top: 353px;
-	left: 161px;
 }
 
 #line-3 {
-	top: 363px;
-	left: 161px;
+	top: 5px;
 }
 
 
 #sidebar-nav {
-	display: inline-block;
 	width: 70%;
 	padding: 0;
-	margin: 220px 0 0 0;
 	text-align: center;
 	vertical-align: top;
 	list-style: none;
