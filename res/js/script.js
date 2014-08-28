@@ -59,12 +59,18 @@ function transition(nextPage) {
 }
 
 function moveUp(nextPage) {
+	$(curPage).css('transform', 'translate3d(0px,-100vh,0)');
 	$(curPage).css('-webkit-transform', 'translate3d(0px,-100vh,0)');
+	$(curPage).css('-moz-transform', 'translate3d(0px,-100vh,0)');
+	$(curPage).css('-o-transform', 'translate3d(0px,-100vh,0)');
 	loadNewPage(nextPage);
 }
 
 function moveDown(nextPage) {
+	$(curPage).css('transform', 'translate3d(0px,100vh,0)');
 	$(curPage).css('-webkit-transform', 'translate3d(0px,100vh,0)');
+	$(curPage).css('-moz-transform', 'translate3d(0px,100vh,0)');
+	$(curPage).css('-o-transform', 'translate3d(0px,100vh,0)');
 	loadNewPage(nextPage);
 }
 
@@ -72,7 +78,10 @@ function loadNewPage(nextPage) {
 	$('a').addClass('disableLink');
 	setTimeout(function() {
 		$(curPage).hide();
+		$(curPage).css('transform', 'translate3d(0px,0px,0)');
 		$(curPage).css('-webkit-transform', 'translate3d(0px,0px,0)');
+		$(curPage).css('-moz-transform', 'translate3d(0px,0px,0)');
+		$(curPage).css('-o-transform', 'translate3d(0px,0px,0)');
 		$(curPage).removeClass('transition');
 		$(nextPage).fadeIn(1200, function() {
 			$(this).addClass('transition');
