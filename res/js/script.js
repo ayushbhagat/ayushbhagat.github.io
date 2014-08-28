@@ -68,7 +68,7 @@ function moveUp(nextPage) {
 
 function moveDown(nextPage) {
 	$(curPage).css('transform', 'translate3d(0px,100vh,0)');
-	$(curPage).css('-webkit-transform', 'translate3d(0px,95vh,0)');
+	$(curPage).css('-webkit-transform', 'translate3d(0px,100vh,0)');
 	$(curPage).css('-moz-transform', 'translate3d(0px,100vh,0)');
 	$(curPage).css('-o-transform', 'translate3d(0px,100vh,0)');
 	loadNewPage(nextPage);
