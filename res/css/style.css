@@ -8,6 +8,10 @@
     src: url(../fonts/klavika-light.otf);
 }
 
+body {
+	overflow-y: hidden;
+}
+
 #sidebar-wrapper {
 	left: -150px;
 	width: 215px;
