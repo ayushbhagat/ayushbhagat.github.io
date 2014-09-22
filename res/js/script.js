@@ -21,7 +21,7 @@ function fader(oldPage, newPage) {
 }
 
 function returnToProjectsMain() {
-	var projects = ['#transit-check', '#whiteboard', '#bubblescape', '#the-worlds-hardest-game'];
+	var projects = ['#skip-the-line', '#transit-check', '#whiteboard', '#bubblescape'];
 	var oldPage = '#projects-main';
 	for (var i = 0; i < projects.length; i++) {
 		if ($(projects[i]).is(':visible')) {
