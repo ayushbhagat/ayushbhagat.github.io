@@ -133,6 +133,9 @@ Navigation
   background-color: #d35657;
 }
 .cd-side-navigation li:nth-of-type(5) a::after {
+  background-color: #318ce7;
+}
+.cd-side-navigation li:nth-of-type(6) a::after {
   background-color: yellow;
 }
 @media only screen and (min-width: 480px) {

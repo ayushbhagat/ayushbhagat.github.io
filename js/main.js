@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
 	// Select a new section and scroll to it.
 	navbar.on('click', 'a', function(event) {
 		var target = $(this);
-		if (target.data('menu') !== 'fourth' && target.data('menu') !== 'fifth') {
+		if (target.data('menu') !== 'link') {
 			event.preventDefault();
 			var scrollId = $('#' + target.data('menu'));
 			newSection = target.data('menu');
